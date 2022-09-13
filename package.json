@@ -1,0 +1,28 @@
+{
+	"name": "cdn.nodesite.eu",
+	"description": "NodeSite CDN",
+	"version": "0.0.0",
+	"main": "lib/index.js",
+	"bin": {
+		"cdn.nodesite.eu": "lib/index.js"
+	},
+	"author": "Prokop Schield",
+	"dependencies": {
+		"doge-config": "^0.3.20",
+		"mime-types": "^2.1.35",
+		"nodesite.eu": "1.2.0-34",
+		"nodesite.eu-local": "^1.2.2",
+		"nsblob": "^0.2.9",
+		"ps-std": "^0.1.6"
+	},
+	"devDependencies": {
+		"@types/mime-types": "^2.1.1",
+		"@types/node": "^14.18.28"
+	},
+	"keywords": [],
+	"license": "GPL-3.0-or-later",
+	"types": "./lib/index.d.ts",
+	"directories": {
+		"lib": "lib"
+	}
+}
