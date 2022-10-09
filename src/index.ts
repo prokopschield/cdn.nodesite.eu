@@ -136,7 +136,6 @@ create('/', async (req: NodeSiteRequest) => {
 						head: {
 							'Accept-Ranges': 'bytes',
 							'Content-Type': content_type,
-							'Content-Length': data.length,
 							'Content-Range': `bytes ${start}-${end}/${data.length}`,
 							'Access-Control-Allow-Origin': '*',
 							'Access-Control-Allow-Methods': 'GET, PUT',
@@ -150,7 +149,6 @@ create('/', async (req: NodeSiteRequest) => {
 					head: {
 						'Accept-Ranges': 'bytes',
 						'Content-Type': content_type,
-						'Content-Length': data.length,
 						'Access-Control-Allow-Origin': '*',
 						'Access-Control-Allow-Methods': 'GET, PUT',
 						'Access-Control-Allow-Headers': '*',
