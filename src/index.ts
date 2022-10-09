@@ -126,8 +126,9 @@ create('/', async (req: NodeSiteRequest) => {
 				);
 
 				if (ranges) {
-					const [range] = ranges;
-					const [start, end] = range;
+					let [[start, end]] = ranges;
+
+					end = Math.min(start + (1 << 18) - 1, end);
 
 					const slice = data.subarray(start, end + 1);
 
